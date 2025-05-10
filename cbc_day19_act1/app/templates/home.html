@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h2>Welcome {{ email }}</h2>
+    <h3>Add Your Info</h3>
+    <form action="/add_info" method="post">
+        <label>First Name:</label><br>
+        <input type="text" name="firstname" required><br><br>
+
+        <label>Middle Name:</label><br>
+        <input type="text" name="middlename"><br><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" name="lastname" required><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" required><br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" required></textarea><br><br>
+
+        <label>Birthday:</label><br>
+        <input type="date" name="birthday" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
